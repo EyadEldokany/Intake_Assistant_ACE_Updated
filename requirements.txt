@@ -1,0 +1,5 @@
+# Ollama Cloud API
+ollama>=0.4.0
+
+# Core dependencies
+python-dotenv>=1.0.0

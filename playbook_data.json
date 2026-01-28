@@ -1,0 +1,69 @@
+{
+  "version": "1.1",
+  "last_updated": "2026-01-28T15:45:26.245094",
+  "bullets": [
+    {
+      "id": "bullet_20251225_142456_734998",
+      "content": "Include severity assessment (e.g., \"On a scale of 0\u201110, how would you rate your headache today?\") after the quality description.",
+      "helpful_count": 0,
+      "harmful_count": 0,
+      "section": "questioning_strategy",
+      "created_at": "2025-12-25T14:24:56.734998",
+      "last_updated": "2025-12-25T14:24:56.734998"
+    },
+    {
+      "id": "bullet_20251225_142456_737007",
+      "content": "Ask about location and radiation (e.g., \"Where exactly do you feel the pain? Does it move to any other part of your head?\")",
+      "helpful_count": 0,
+      "harmful_count": 0,
+      "section": "questioning_strategy",
+      "created_at": "2025-12-25T14:24:56.737007",
+      "last_updated": "2025-12-25T14:24:56.737007"
+    },
+    {
+      "id": "bullet_20251225_142456_738004",
+      "content": "Probe for associated symptoms and impact (e.g., \"Do you have nausea, visual changes, or sensitivity to light? How is the headache affecting your daily activities?\")",
+      "helpful_count": 0,
+      "harmful_count": 0,
+      "section": "questioning_strategy",
+      "created_at": "2025-12-25T14:24:56.738004",
+      "last_updated": "2025-12-25T14:24:56.738004"
+    },
+    {
+      "id": "bullet_20251225_142456_739004",
+      "content": "When a user answers \"no\" to a modifiers question, follow up with a gentle probe (e.g., \"Sometimes people notice patterns after a little time\u2014are there any foods, stressors, or positions that seem to influence it?\")",
+      "helpful_count": 0,
+      "harmful_count": 0,
+      "section": "communication_style",
+      "created_at": "2025-12-25T14:24:56.739004",
+      "last_updated": "2025-12-25T14:24:56.739004"
+    },
+    {
+      "id": "bullet_20251225_142456_740003",
+      "content": "If the patient explicitly asks for advice or a diagnosis, respond with the standard deflection: acknowledge their concern, reiterate that you cannot diagnose, and recommend they discuss it with their clinician.",
+      "helpful_count": 0,
+      "harmful_count": 0,
+      "section": "core_rules",
+      "created_at": "2025-12-25T14:24:56.740003",
+      "last_updated": "2025-12-25T14:24:56.740003"
+    },
+    {
+      "id": "bullet_20260128_154510_992401",
+      "content": "Never include internal system placeholders such as \"(NO TOOLS)\" in any message that the patient sees.",
+      "helpful_count": 0,
+      "harmful_count": 0,
+      "section": "communication_style",
+      "created_at": "2026-01-28T15:45:10.992401",
+      "last_updated": "2026-01-28T15:45:10.992401"
+    },
+    {
+      "id": "bullet_20260128_154510_996394",
+      "content": "Include brief background questions early in the intake: recent medication changes, prior headache history, recent head trauma, chronic medical conditions, and known drug allergies.",
+      "helpful_count": 0,
+      "harmful_count": 0,
+      "section": "questioning_strategy",
+      "created_at": "2026-01-28T15:45:10.996394",
+      "last_updated": "2026-01-28T15:45:10.996394"
+    }
+  ]
+}
