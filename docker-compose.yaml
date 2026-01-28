@@ -1,25 +1,30 @@
 version: '3.8'
 
 services:
-  ace-assistant:
+  ace-api:
     build:
       context: .
       dockerfile: Dockerfile
     container_name: ace_medical_assistant
+    ports:
+      - "5000:5000"
     environment:
       # ✅ Ollama Cloud API Configuration
       - OLLAMA_API_KEY=${OLLAMA_API_KEY}
-      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-https://api.ollama.cloud}
+      - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-https://ollama.com}
       - PYTHONUNBUFFERED=1
     volumes:
       # Mount logs directory to persist conversation logs
       - ./logs:/app/logs
       # Mount playbook_data.json to persist learning
       - ./playbook_data.json:/app/playbook_data.json
-    stdin_open: true
-    tty: true
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
 
 volumes:
   logs:
-  playbook_data:
