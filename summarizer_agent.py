@@ -96,7 +96,7 @@ def generate_summary(conversation_history: list, model='deepseek-v3.1:671b-cloud
 
     try:
         print("[SUMMARIZER] Generating clinical summary...")
-        response = ollama.chat(model=model, messages=messages)
+        response = ollama_client.chat(model=model, messages=messages)
         summary = response['message']['content']
         print("[SUMMARIZER] Summary generated successfully")
         return summary
@@ -153,7 +153,7 @@ If any field was not discussed, use null or an empty array."""
     ]
 
     try:
-        response = ollama.chat(model=model, messages=messages, format='json')
+        response = ollama_client.chat(model=model, messages=messages, format='json')
         return json.loads(response['message']['content'])
     except Exception as e:
         return {

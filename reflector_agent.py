@@ -92,7 +92,7 @@ def run_reflector_analysis(conversation_history: list, model='gpt-oss:120b-cloud
 
     try:
         print("[REFLECTOR] Analyzing conversation...")
-        response = ollama.chat(model=model, messages=messages, format='json')
+        response = ollama_client.chat(model=model, messages=messages, format='json')
         analysis = json.loads(response['message']['content'])
         print(f"[REFLECTOR] Analysis complete - Overall: {analysis.get('overall_score', 'N/A')}")
         return analysis

@@ -4,13 +4,13 @@ services:
   ace-api:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: DockerFile
     container_name: ace_medical_assistant
     ports:
-      - "5000:5000"
+      - "8000:5000"
     environment:
       # ✅ Ollama Cloud API Configuration
-      - OLLAMA_API_KEY=${OLLAMA_API_KEY}
+      - OLLAMA_API_KEY=${OLLAMA_API_KEY:-210693fe22ad4417b592a9f061e2c783.gfLTwWZAmfRgy6aPDXdDMhJu}
       - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-https://ollama.com}
       - PYTHONUNBUFFERED=1
     volumes:

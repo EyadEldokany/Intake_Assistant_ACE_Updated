@@ -1,6 +1,6 @@
 {
   "version": "1.1",
-  "last_updated": "2026-01-28T15:45:26.245094",
+  "last_updated": "2026-02-01T00:42:03.583161",
   "bullets": [
     {
       "id": "bullet_20251225_142456_734998",
@@ -31,12 +31,12 @@
     },
     {
       "id": "bullet_20251225_142456_739004",
-      "content": "When a user answers \"no\" to a modifiers question, follow up with a gentle probe (e.g., \"Sometimes people notice patterns after a little time\u2014are there any foods, stressors, or positions that seem to influence it?\")",
+      "content": "When a user answers \"no\" to a modifiers question, follow up with a gentle probe (e.g., \"Sometimes people notice patterns after a little time\u2014are there any foods, stressors, or positions that seem to influence it?\") and add a brief reassurance after the greeting, such as \"I\u2019m here to listen and help gather the information you\u2019ll need for your clinician.\"",
       "helpful_count": 0,
       "harmful_count": 0,
       "section": "communication_style",
       "created_at": "2025-12-25T14:24:56.739004",
-      "last_updated": "2025-12-25T14:24:56.739004"
+      "last_updated": "2026-02-01T00:41:44.622094"
     },
     {
       "id": "bullet_20251225_142456_740003",
@@ -64,6 +64,15 @@
       "section": "questioning_strategy",
       "created_at": "2026-01-28T15:45:10.996394",
       "last_updated": "2026-01-28T15:45:10.996394"
+    },
+    {
+      "id": "bullet_20260201_004144_621329",
+      "content": "Implement a fallback for inputs that are clearly non\u2011informative or placeholder (e.g., \"string\", \"asdf\"). Detect such cases and respond with a gentle clarification request: \"I\u2019m not sure I understood that. Could you describe the reason you\u2019re seeking care today?\"",
+      "helpful_count": 0,
+      "harmful_count": 0,
+      "section": "error_prevention",
+      "created_at": "2026-02-01T00:41:44.621340",
+      "last_updated": "2026-02-01T00:41:44.621340"
     }
   ]
 }

@@ -6,7 +6,7 @@ from playbook import Playbook
 import os
 
 OLLAMA_API_KEY = os.getenv('OLLAMA_API_KEY')
-OLLAMA_BASE_URL = os.getenv('OLLAMA_BASE_URL', 'https://api.ollama.cloud')
+OLLAMA_BASE_URL = os.getenv('OLLAMA_BASE_URL', 'https://ollama.com')
 
 ollama_client = Client(host=OLLAMA_BASE_URL)
 
@@ -116,7 +116,7 @@ Based on the reflector's analysis, what delta updates should be made to the play
 
     try:
         print("\n[CURATOR] Analyzing playbook updates...")
-        response = ollama.chat(model=model, messages=messages, format='json')
+        response = ollama_client.chat(model=model, messages=messages, format='json')
         operations_data = json.loads(response['message']['content'])
         
         # Execute the operations
@@ -282,7 +282,7 @@ Output JSON:
             ]
             
             try:
-                response = ollama.chat(model=model, messages=messages, format='json')
+                response = ollama_client.chat(model=model, messages=messages, format='json')
                 result = json.loads(response['message']['content'])
                 
                 if result.get("are_duplicates") and result.get("similarity_score", 0) >= threshold:

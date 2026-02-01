@@ -1,7 +1,7 @@
 # Ollama Cloud API Configuration
 OLLAMA_API_KEY=210693fe22ad4417b592a9f061e2c783.gfLTwWZAmfRgy6aPDXdDMhJu
 # Ollama Cloud Base URL (usually doesn't need to change)
-OLLAMA_BASE_URL=https://api.ollama.cloud
+OLLAMA_BASE_URL=https://ollama.com/
 
 # Model Configuration (optional - uses defaults in code)
 # DEFAULT_MODEL=deepseek-v3.1:671b-cloud
